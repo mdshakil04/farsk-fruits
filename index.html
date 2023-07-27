@@ -26,7 +26,7 @@
         Header Section Start
      -->
     <header class="max-w-screen-2xl  mx-auto">
-        <!-- Navigation Container Start -->
+        <!-- Navigation Container Start Here-->
         <nav class="my-12 ">
           <div class="navbar md:bg-[#F85559] rounded-full lg:p-7 ">
             <div class="navbar-start absolute lg:static invisible lg:visible lg:flex">
@@ -43,11 +43,13 @@
               <a class="normal-case lg:text-4xl text-2xl font-medium lg:font-bold md:text-white">Farsk Fruits</a>
             </div>
             <div class="navbar-end absolute lg:static  invisible lg:visible">
-              <button class="btn btn-wide flex flex-row justify-between rounded-full normal-case bg-white"> Search Here
+              <button class="btn btn-wide flex flex-row justify-between rounded-full normal-case  bg-white"> 
+                <input class="outline-none bg-[#FFFFFF] p-2 rounded-full" placeholder="Searce here" type="text">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
               </button>
             </div>
-            <div class="navbar-end  lg:absolute">
+            <!-- Responsive Navbar Start -->
+             <div class="navbar-end  lg:absolute">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-10 h-10 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -60,11 +62,15 @@
                 </ul>
               </div>
             </div>
+            <!-- Responsive Navbar Ends -->
           </div>
         </nav>
+        <!-- Navigation Container Ends Here -->
         <!-- Banner Container Start here -->
         <div class="carousel w-full mb-10">
+
           <!-- First carousel -->
+
           <div id="slide1" class="carousel-item relative w-full items-center ">
             <div class="hero rounded-2xl md:h-[600px] " style="background-image: url(./images/banner1.png);">
               <div class="hero-overlay rounded-2xl bg-opacity-60"></div>
@@ -72,7 +78,7 @@
                 <div class="max-w-md">
                   <h1 class="mb-5 text-2xl lg:text-7xl text-white font-bold">Exotic tastes at your doorstep</h1>
                   <p class="mb-5 text-sm">We supply highly quality organic products</p>
-                  <button class="btn bg-[#F85559] text-white -none">Shop Now</button>
+                  <button class="btn bg-[#F85559] border-none text-white -none">Shop Now</button>
                 </div>
               </div>
             </div>
@@ -81,7 +87,9 @@
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div> 
+
           <!-- Second carousel -->
+
           <div id="slide2" class="carousel-item relative w-full">
             <div class="hero rounded-2xl md:h-[600px]" style="background-image: url(./images/banner2.png);">
               <div class="hero-overlay rounded-2xl bg-opacity-60"></div>
@@ -89,7 +97,7 @@
                 <div class="max-w-md">
                   <h1 class="mb-5 text-2xl lg:text-7xl text-white font-bold">Exotic tastes at your doorstep</h1>
                   <p class="mb-5 text-sm">We supply highly quality organic products</p>
-                  <button class="btn bg-[#F85559] text-white -none">Shop Now</button>
+                  <button class="btn bg-[#F85559] border-none text-white -none">Shop Now</button>
                 </div>
               </div>
             </div>
@@ -98,7 +106,9 @@
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
           </div> 
+
           <!-- Third carousel -->
+
           <div id="slide3" class="carousel-item relative w-full">
             <div class="hero rounded-2xl md:h-[600px]" style="background-image: url(./images/banner3.png);">
               <div class="hero-overlay rounded-2xl bg-opacity-60"></div>
@@ -106,16 +116,18 @@
                 <div class="max-w-md">
                   <h1 class="mb-5 text-2xl lg:text-7xl text-white font-bold">Exotic tastes at your doorstep</h1>
                   <p class="mb-5 text-sm">We supply highly quality organic products</p>
-                  <button class="btn bg-[#F85559] text-white -none">Shop Now</button>
+                  <button class="btn bg-[#F85559] border-none text-white -none">Shop Now</button>
                 </div>
               </div>
             </div>
-            <div class="absolute flex justify-between opacity-20 transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div class="absolute flex justify-between opacity-20 transform -translate-y-1/2 left-5 right-5  top-1/2">
               <a href="#slide2" class="btn btn-circle">❮</a> 
               <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
           </div>
+
           <!-- Fourth carousel -->
+
           <div id="slide4" class="carousel-item relative w-full">
             <div class="hero rounded-2xl md:h-[600px]" style="background-image: url(./images/banner4.png);">
               <div class="hero-overlay rounded-2xl bg-opacity-60"></div>
@@ -123,7 +135,7 @@
                 <div class="max-w-md">
                   <h1 class="mb-5 text-2xl lg:text-7xl text-white font-bold">Exotic tastes at your doorstep</h1>
                   <p class="mb-5 text-sm">We supply highly quality organic products</p>
-                  <button class="btn bg-[#F85559] text-white -none">Shop Now</button>
+                  <button class="btn bg-[#F85559] border-none text-white -none">Shop Now</button>
                 </div>
               </div>
             </div>
@@ -132,9 +144,14 @@
               <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
+
         </div>
-        <!-- Banner-Child Container -->
-        <div class="grid grid-cols-5 items-center lg:max-w-[1196px]  absolute invisible lg:visible mx-auto lg:relative -mt-36 mb-10 rounded-lg shadow-md bg-white h-[250px] ">
+        <!-- Banner Container Ends Here -->
+        <!-- 
+          Banner-Child Container Start Here
+          Which is not visible in Small device
+        -->
+        <div class="lg:grid lg:grid-cols-5 items-center lg:max-w-[1196px]  absolute invisible lg:visible mx-auto lg:relative -mt-36 mb-10 rounded-lg shadow-md bg-white h-[250px] ">
           <div class="flex flex-col items-center">
             <img src="./images/fruit1.png" alt="Fruits">
             <p>Grapes</p>
@@ -156,9 +173,11 @@
             <p>Pomegranate</p>
           </div>
         </div>
+        <!-- Banner Child Container Ends Here -->
     </header>
+    <!-- Header Ends Here -->
     <!-- 
-        Main Section Start
+        Main Section Start Here
      -->
     <main class="max-w-screen-2xl  mx-auto">
       <!-- Deal Of The Day Start here -->
@@ -168,43 +187,47 @@
               <h2 class="font-extrabold text-5xl mb-4">Deal Of The Day</h2>
               <p class=" lg:w-[600px]  md:font-medium text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
+            <!--
+               Date Countdown Which is collected from Daisy UI
+             -->
             <div>
               <div class="grid grid-flow-col lg:gap-2 text-center auto-cols-max ">
                 <div class="flex flex-col">
-                  <span class="countdown lg:font-extrabold font-mono text-3xl lg:text-5xl">
+                  <span class="countdown lg:font-extrabold font-semibold text-5xl">
                     <span style="--value:15;"></span>
                     <img src="./images/Frame.svg">
                   </span>
                   days
                 </div> 
                 <div class="flex flex-col">
-                  <span class="countdown lg:font-extrabold font-mono text-3xl lg:text-5xl">
+                  <span class="countdown lg:font-extrabold font-semibold text-5xl">
                     <span  style="--value:10;"></span>
                     <img src="./images/Frame.svg">
                   </span>
                   hours
                 </div> 
                 <div class="flex flex-col">
-                  <span class="countdown lg:font-extrabold font-mono text-3xl lg:text-5xl">
+                  <span class="countdown lg:font-extrabold font-semibold text-5xl">
                     <span  style="--value:24;"></span>
                     <img src="./images/Frame.svg">
                   </span>
                   min
                 </div> 
                 <div class="flex flex-col">
-                  <span class="countdown lg:font-extrabold font-mono text-3xl lg:text-5xl">
+                  <span class="countdown lg:font-extrabold font-semibold text-5xl">
                     <span style="--value:19;"></span>
                   </span>
                   sec
                 </div>
               </div>
             </div>
+            <!-- Countdoun Ends -->
           </div>
       </section>
       <!-- Fruit Cart Section Start Here -->
           <div class="fruits-cart  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10 ">
             <!-- Cart One -->
-            <div class="card   bg-base-100 shadow-xl">
+            <div class="card shadow-xl border  bg-base-100 ">
               <figure class="px-10 pt-10">
                 <img src="./images/fruit6.png" alt="Fruits" class="rounded-xl" />
               </figure>
@@ -238,7 +261,8 @@
                           </div>
                         <div class="modal-action">
                           <!-- if there is a button, it will close the modal -->
-                          <button class="btn">Close</button>
+                          <button class="btn bg-red-700 text-white">Close</button>
+                          <button class="btn bg-[#F85559] border-none text-white ">Buy Now</button>
                         </div>
                       </form>
                     </dialog>
@@ -246,7 +270,7 @@
               </div>
             </div>
             <!-- Cart Two -->
-            <div class="card   bg-base-100 shadow-xl">
+            <div class="card shadow-xl border bg-base-100 ">
               <figure class="px-10 pt-10">
                 <img src="./images/fruit7.png" alt="Fruits" class="rounded-xl" />
               </figure>
@@ -281,6 +305,7 @@
                         <div class="modal-action">
                           <!-- if there is a button, it will close the modal -->
                           <button class="btn">Close</button>
+                          <button class="btn bg-[#F85559] border-none text-white ">Buy Now</button>
                         </div>
                       </form>
                     </dialog>
@@ -288,7 +313,7 @@
               </div>
             </div>
             <!-- Cart Three -->
-            <div class="card   bg-base-100 shadow-xl">
+            <div class="card shadow-xl border bg-base-100 ">
               <figure class="px-10 pt-10">
                 <img src="./images/fruit8.png" alt="Fruits" class="rounded-xl" />
               </figure>
@@ -323,6 +348,7 @@
                         <div class="modal-action">
                           <!-- if there is a button, it will close the modal -->
                           <button class="btn">Close</button>
+                          <button class="btn bg-[#F85559] border-none text-white ">Buy Now</button>
                         </div>
                       </form>
                     </dialog>
@@ -330,7 +356,7 @@
               </div>
             </div>
             <!-- Cart Four -->
-            <div class="card   bg-base-100 shadow-xl">
+            <div class="card shadow-xl border bg-base-100 ">
               <figure class="px-10 pt-10">
                 <img src="./images/fruit9.png" alt="Fruits" class="rounded-xl" />
               </figure>
@@ -364,7 +390,8 @@
                           </div>
                         <div class="modal-action">
                           <!-- if there is a button, it will close the modal -->
-                          <button class="btn">Close</button>
+                          <button class="btn ">Close</button>
+                          <button class="btn bg-[#F85559] border-none text-white ">Buy Now</button>
                         </div>
                       </form>
                     </dialog>
@@ -450,7 +477,7 @@
           <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
         <!-- Chose-Grid container -->
-        <div class="grid md:grid-cols-3 justify-center items-center gap-20">
+        <div class="grid lg:grid-cols-3 justify-center items-center gap-20">
           <!-- Left Text -->
           <div class="grid gap-12 justify-center ">
             <div class="grid lg:flex items-center gap-4 ">
@@ -522,7 +549,6 @@
     <!-- 
         Footer Section Start
     -->
-
     <footer class="footer footer-center p-10 bg-[#121212] text-base-content rounded">
       <div class="grid grid-flow-col gap-4">
           <img src="./images/logo.png" alt="">
@@ -550,5 +576,6 @@
         <p class="text-white">Copyright © 2023 - All right reserved by Farsk Fruits Ltd</p>
       </div>
     </footer>
+
 </body>
 </html>
